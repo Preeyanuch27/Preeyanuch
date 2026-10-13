@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c8ff00">
+  <meta name="description" content="Portfolio ของ Video Editor และ Graphic Designer — ภาพ วิดีโอ และงานสร้างสรรค์">
+  <meta property="og:title" content="YOUR NAME — Creative Portfolio">
+  <meta property="og:description" content="Video Editor / Graphic Designer">
+  <meta property="og:type" content="website">
+  <title>YOUR NAME® — Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="top-strip"><span>INDEPENDENT CREATIVE</span><span>AVAILABLE FOR SELECT PROJECTS ↗</span><span>TH / EN</span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="กลับหน้าแรก">YN<span>®</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#work" data-th="ผลงาน" data-en="WORK">ผลงาน</a>
+      <a href="#about" data-th="เกี่ยวกับฉัน" data-en="ABOUT">เกี่ยวกับฉัน</a>
+      <a href="#skills" data-th="ทักษะ" data-en="SKILLS">ทักษะ</a>
+      <a href="#contact" data-th="ติดต่อ" data-en="CONTACT">ติดต่อ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN ↗</button>
+      <a class="contact-pill" href="#contact" data-th="มาคุยกัน ↗" data-en="LET'S TALK ↗">มาคุยกัน ↗</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false" type="button">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad" id="home">
+      <div class="hero-meta"><span>PORTFOLIO / 2026</span><span>BASED IN THAILAND · WORKING WORLDWIDE</span></div>
+      <p class="eyebrow"><span class="live-dot"></span><span data-th="นักเล่าเรื่องผ่านภาพและการเคลื่อนไหว" data-en="VISUAL STORYTELLER & MOTION MAKER">นักเล่าเรื่องผ่านภาพและการเคลื่อนไหว</span></p>
+      <h1 class="hero-title">MAKE IT<br><span class="outline-text">LOUDER</span><span class="lime-dot">.</span></h1>
+      <div class="hero-bottom">
+        <p class="hero-intro" data-th="สร้างภาพให้สะดุดตา ตัดต่อให้มีจังหวะ และเปลี่ยนไอเดียให้กลายเป็นงานที่คนจดจำ" data-en="I craft bold visuals, sharp edits and moving images that turn ideas into work people remember.">สร้างภาพให้สะดุดตา ตัดต่อให้มีจังหวะ และเปลี่ยนไอเดียให้กลายเป็นงานที่คนจดจำ</p>
+        <div class="hero-roles"><span>VIDEO EDITOR</span><span>✳</span><span>GRAPHIC DESIGNER</span></div>
+      </div>
+      <a class="scroll-cue" href="#work"><span class="scroll-arrow">↓</span><span data-th="เลื่อนเพื่อชมผลงาน" data-en="SCROLL TO EXPLORE">เลื่อนเพื่อชมผลงาน</span></a>
+      <div class="hero-sticker" aria-hidden="true"><span>IDEAS<br>IN MOTION</span><b>✳</b></div>
+    </section>
+
+    <section class="work-section section-pad" id="work">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / SELECTED PROJECTS</p><h2 data-th="คัดมาแล้ว<span>.</span>" data-en="SELECTED<span>.</span>">คัดมาแล้ว<span>.</span></h2></div>
+        <p class="section-note" data-th="งานที่เลือกมาเล่าเรื่อง<br>จากไอเดียสู่ภาพจริง" data-en="A selection of ideas<br>turned into visuals.">งานที่เลือกมาเล่าเรื่อง<br>จากไอเดียสู่ภาพจริง</p>
+      </div>
+      <div class="filter-bar" id="filterBar" aria-label="ตัวกรองผลงาน">
+        <button class="filter-btn active" data-filter="all" type="button">ALL / ทั้งหมด <span>06</span></button>
+        <button class="filter-btn" data-filter="video" type="button">VIDEO</button>
+        <button class="filter-btn" data-filter="graphic" type="button">GRAPHIC</button>
+        <button class="filter-btn" data-filter="motion" type="button">MOTION</button>
+      </div>
+      <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+      <div class="work-foot"><span>END OF SELECTED WORKS</span><span>MORE GOOD THINGS COMING ↘</span></div>
+    </section>
+
+    <section class="manifesto section-pad">
+      <p class="eyebrow">A LITTLE MANIFESTO / 02</p>
+      <p class="manifesto-text" data-th="ไม่ใช่แค่ทำให้<span>สวย</span> แต่ต้องทำให้คน<span class='manifesto-highlight'>รู้สึก</span> และอยากมองซ้ำอีกครั้ง" data-en="NOT JUST MADE TO LOOK <span>GOOD</span> — MADE TO <span class='manifesto-highlight'>FEEL</span> SOMETHING.">ไม่ใช่แค่ทำให้<span>สวย</span> แต่ต้องทำให้คน<span class="manifesto-highlight">รู้สึก</span> และอยากมองซ้ำอีกครั้ง</p>
+      <div class="manifesto-signature"><span>DESIGN WITH INTENTION.</span><span>✳</span><span>EDIT WITH EMOTION.</span></div>
+    </section>
+
+    <section class="about-section section-pad" id="about">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / THE PERSON BEHIND THE PIXELS</p><h2 data-th="สวัสดี<span>.</span><br>ฉันคือใคร" data-en="HEY<span>.</span><br>THAT'S ME">สวัสดี<span>.</span><br>ฉันคือใคร</h2></div>
+        <span class="big-index">[ ME ]</span>
+      </div>
+      <div class="about-layout">
+        <div class="portrait-frame">
+          <img src="assets/images/profile.jpg" alt="รูปโปรไฟล์ของเจ้าของ Portfolio" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="portrait-placeholder"><span>YOUR<br>PORTRAIT</span><b>✳</b><small>ใส่รูปของคุณที่ assets/images/profile.jpg</small></div>
+          <span class="frame-label">CREATIVE HUMAN / 001</span>
+        </div>
+        <div class="about-copy">
+          <p class="about-lead" data-th="ฉันคือครีเอทีฟที่ชอบทดลองกับภาพ สี จังหวะ และเรื่องเล่า" data-en="I'm a creative who loves experimenting with imagery, color, rhythm and storytelling.">ฉันคือครีเอทีฟที่ชอบทดลองกับภาพ สี จังหวะ และเรื่องเล่า</p>
+          <p data-th="สนุกกับการเปลี่ยนบรีฟให้กลายเป็นภาพที่มีคาแรกเตอร์ ตั้งแต่งานวิดีโอที่ต้องเล่าเรื่องให้กระชับ ไปจนถึงกราฟิกที่หยุดสายตาคนดูได้ในไม่กี่วินาที" data-en="I turn briefs into visuals with character—from edits that tell a tight story to graphics that stop the scroll in seconds.">สนุกกับการเปลี่ยนบรีฟให้กลายเป็นภาพที่มีคาแรกเตอร์ ตั้งแต่งานวิดีโอที่ต้องเล่าเรื่องให้กระชับ ไปจนถึงกราฟิกที่หยุดสายตาคนดูได้ในไม่กี่วินาที</p>
+          <div class="about-facts">
+            <div><span>01 / FOCUS</span><b>Video · Design · Motion</b></div>
+            <div><span>02 / WORK MODE</span><b>Freelance / Collaboration</b></div>
+            <div><span>03 / BASE</span><b>Thailand 🇹🇭</b></div>
+          </div>
+          <a class="text-link" href="#contact" data-th="มีโปรเจกต์ในใจไหม? คุยกัน ↗" data-en="HAVE A PROJECT IN MIND? LET'S TALK ↗">มีโปรเจกต์ในใจไหม? คุยกัน ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section section-pad" id="skills">
+      <div class="section-heading">
+        <div><p class="eyebrow">04 / TOOLS & SUPERPOWERS</p><h2 data-th="ของที่ถนัด<span>.</span>" data-en="THE TOOLKIT<span>.</span>">ของที่ถนัด<span>.</span></h2></div>
+        <p class="section-note" data-th="เครื่องมือเป็นแค่จุดเริ่มต้น<br>ไอเดียต่างหากที่สำคัญ" data-en="Tools are the medium.<br>Ideas make the difference.">เครื่องมือเป็นแค่จุดเริ่มต้น<br>ไอเดียต่างหากที่สำคัญ</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><span>01 / EDIT</span><h3>VIDEO<br>EDITING</h3><p>Premiere Pro · DaVinci Resolve · CapCut</p><b>✳</b></article>
+        <article class="skill-card"><span>02 / MOVE</span><h3>MOTION<br>GRAPHICS</h3><p>After Effects · Motion Design</p><b>↗</b></article>
+        <article class="skill-card"><span>03 / DESIGN</span><h3>GRAPHIC<br>DESIGN</h3><p>Photoshop · Illustrator · Layout</p><b>▧</b></article>
+        <article class="skill-card"><span>04 / THINK</span><h3>VISUAL<br>STORYTELLING</h3><p>Concept · Art Direction · Color</p><b>◎</b></article>
+      </div>
+      <p class="skills-disclaimer" data-th="* แก้ไขรายการโปรแกรมให้ตรงกับทักษะและประสบการณ์จริงของคุณ" data-en="* Update this list to reflect your actual skills and experience.">* แก้ไขรายการโปรแกรมให้ตรงกับทักษะและประสบการณ์จริงของคุณ</p>
+    </section>
+
+    <section class="contact-section section-pad" id="contact">
+      <p class="eyebrow">05 / YOUR NEXT MOVE</p>
+      <h2 data-th="มาสร้างอะไร<br><span>เจ๋ง ๆ</span> กัน" data-en="LET'S MAKE<br>SOMETHING <span>LOUD.</span>">มาสร้างอะไร<br><span>เจ๋ง ๆ</span> กัน</h2>
+      <div class="contact-bottom">
+        <p data-th="มีบรีฟ มีไอเดีย หรือแค่อยากทักมาคุย<br>ส่งข้อความมาได้เลย" data-en="Got a brief, an idea, or just want to say hi? My inbox is open.">มีบรีฟ มีไอเดีย หรือแค่อยากทักมาคุย<br>ส่งข้อความมาได้เลย</p>
+        <a class="email-button" id="emailLink" href="mailto:hello@example.com">HELLO@EXAMPLE.COM ↗</a>
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>
+        <a href="https://www.behance.net/" target="_blank" rel="noreferrer">BEHANCE ↗</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YOUTUBE ↗</a>
+        <button id="copyEmail" type="button">COPY EMAIL +</button>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#home">YN<span>®</span></a><span>BUILT WITH IDEAS & CAFFEINE.</span><span>© <span id="year"></span> YOUR NAME</span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-label="รายละเอียดผลงาน" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" aria-label="ปิด" data-close-modal>×</button>
+      <div id="modalMedia" class="modal-media"></div>
+      <div class="modal-details"><p class="eyebrow" id="modalCategory"></p><h2 id="modalTitle"></h2><p id="modalDescription"></p><a id="modalExternal" class="text-link" href="#" target="_blank" rel="noreferrer">OPEN PROJECT ↗</a></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
